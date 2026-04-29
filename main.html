@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -318,4 +319,326 @@
     <script src="script.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>TaTi — цветочный бутик</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;500;600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <script src="script.js" defer></script>
+    <div class="app-wrapper">
+        <aside class="sidebar" aria-label="Основная навигация">
+            <div class="sidebar-flower" aria-hidden="true"></div>
+            <div class="logo-area">
+                <h1>TaTi</h1>
+                <p>БУКЕТЫ ДЛЯ НАСТРОЕНИЯ</p>
+            </div>
+            <nav class="nav-menu" role="navigation">
+                <div class="nav-item active" data-page="home" role="button" tabindex="0"><i class="fas fa-home"
+                        aria-hidden="true"></i> <span>Главная</span></div>
+                <div class="nav-item" data-page="bouquets" role="button" tabindex="0"><i class="fas fa-seedling"
+                        aria-hidden="true"></i> <span>Букеты</span></div>
+                <div class="nav-item" data-page="gifts" role="button" tabindex="0"><i class="fas fa-gift"
+                        aria-hidden="true"></i> <span>Подарки</span></div>
+                <div class="nav-item" data-page="constructor" role="button" tabindex="0"><i class="fas fa-magic"
+                        aria-hidden="true"></i> <span>Конструктор</span></div>
+                <div class="nav-item" data-page="faq" role="button" tabindex="0"><i class="fas fa-question-circle"
+                        aria-hidden="true"></i> <span>F.A.Q</span></div>
+            </nav>
+            <div class="contact-side">
+                <div class="phone"><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+74994505045"
+                        style="color:inherit;text-decoration:none;">+7 (499) 450-50-45</a></div>
+                <div class="small-text">доставка цветов 24/7</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <!-- Главная страница -->
+            <div id="homePage" class="page active-page">
+                <!-- Декоративные цветы на фоне -->
+                <div class="floral-bg floral-bg-1" aria-hidden="true"></div>
+                <div class="floral-bg floral-bg-2" aria-hidden="true"></div>
+                <div class="floral-bg floral-bg-3" aria-hidden="true"></div>
+
+                <!-- Hero секция -->
+                <div class="hero-creative">
+                    <div class="hero-content">
+                        <div class="hero-badge">Цветочный бутик TaTi</div>
+                        <h2>Цветы, которые <span>вдохновляют</span></h2>
+                        <p>Авторские букеты, созданные с любовью и вниманием к деталям.
+                            Доставляем эмоции и настроение с 2024 года.</p>
+                        <div class="hero-cta">
+                            <button class="btn-primary" onclick="showPage('bouquets')">
+                                <i class="fas fa-seedling"></i> Выбрать букет
+                            </button>
+                            <button class="btn-secondary" onclick="showPage('constructor')">
+                                <i class="fas fa-magic"></i> Собрать свой
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Почему мы -->
+                <section class="why-section">
+                    <h2 class="section-title">Почему выбирают нас</h2>
+                    <div class="why-grid">
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-leaf"></i></div>
+                            <h3>Свежесть гарантируем</h3>
+                            <p>Работаем напрямую с плантациями. Каждый цветок проходит строгий отбор перед созданием
+                                букета.</p>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-palette"></i></div>
+                            <h3>Авторский дизайн</h3>
+                            <p>Наши флористы создают уникальные композиции, учитывая ваши пожелания и повод.</p>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-shipping-fast"></i></div>
+                            <h3>Доставка 24/7</h3>
+                            <p>Привезём букет в любое время суток. Бесплатная доставка при заказе от 5000 ₽.</p>
+                        </div>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="fas fa-heart"></i></div>
+                            <h3>С любовью к делу</h3>
+                            <p>Каждый букет — это история. Мы вкладываем душу в каждую композицию.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Популярные букеты -->
+                <section class="featured-bouquets">
+                    <h2 class="section-title">Популярные букеты</h2>
+                    <div class="bouquets-showcase">
+                        <div class="showcase-item" onclick="showPage('bouquets')">
+                            <img src="https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Лунная соната">
+                            <div class="showcase-overlay">
+                                <div class="showcase-title">Лунная соната</div>
+                                <div class="showcase-price">4 350 ₽</div>
+                            </div>
+                        </div>
+                        <div class="showcase-item" onclick="showPage('bouquets')">
+                            <img src="https://images.pexels.com/photos/858353/pexels-photo-858353.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Изумрудный мох">
+                            <div class="showcase-overlay">
+                                <div class="showcase-title">Изумрудный мох</div>
+                                <div class="showcase-price">5 200 ₽</div>
+                            </div>
+                        </div>
+                        <div class="showcase-item" onclick="showPage('bouquets')">
+                            <img src="https://images.pexels.com/photos/1142820/pexels-photo-1142820.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Полночный сад">
+                            <div class="showcase-overlay">
+                                <div class="showcase-title">Полночный сад</div>
+                                <div class="showcase-price">5 980 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Цитата -->
+                <section class="quote-section">
+                    <div class="quote-text">Цветы — это поэзия земли, написанная красками</div>
+                    <div class="quote-author">— Неизвестный автор</div>
+                </section>
+
+                <!-- CTA секция -->
+                <div
+                    style="text-align: center; margin: 4rem 0; padding: 3rem; background: var(--color-bg-card); border-radius: 24px; border: 1px solid rgba(212, 165, 116, 0.1);">
+                    <h3
+                        style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--color-accent); margin-bottom: 1rem;">
+                        Не нашли идеальный букет?
+                    </h3>
+                    <p
+                        style="color: var(--color-text-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Создадим уникальную композицию специально для вас в нашем конструкторе
+                    </p>
+                    <button class="btn-primary" onclick="showPage('constructor')">
+                        <i class="fas fa-magic"></i> Создать букет мечты
+                    </button>
+                </div>
+
+                <footer>TaTi — цветы, которые дарят настроение</footer>
+            </div>
+
+            <!-- Страница Букеты -->
+            <div id="bouquetsPage" class="page">
+                <div class="page-title">Наши букеты</div>
+                <div id="bouquetsGrid" class="products-grid" aria-live="polite"></div>
+                <footer>Свежесть гарантируем</footer>
+            </div>
+
+            <!-- Страница Подарки -->
+            <div id="giftsPage" class="page">
+                <div class="page-title">Подарки к букетам</div>
+                <div class="gift-tabs" id="giftTabs" role="tablist">
+                    <button class="gift-tab active" data-cat="all" role="tab">Все подарки</button>
+                    <button class="gift-tab" data-cat="chocolate" role="tab">Шоколад</button>
+                    <button class="gift-tab" data-cat="candle" role="tab">Свечи</button>
+                    <button class="gift-tab" data-cat="card" role="tab">Открытки</button>
+                    <button class="gift-tab" data-cat="balloon" role="tab">Шарики</button>
+                    <button class="gift-tab" data-cat="holiday" role="tab">Праздник</button>
+                </div>
+                <div id="giftsGrid" class="products-grid" aria-live="polite"></div>
+                <footer>Идеальные дополнения к вашему букету</footer>
+            </div>
+
+            <!-- Страница Конструктор -->
+            <div id="constructorPage" class="page">
+                <div class="page-title">Соберите свой букет</div>
+                <div class="constructor-section">
+                    <div class="constructor-grid">
+                        <div class="flower-picker">
+                            <div style="font-weight:600; margin-bottom:0.8rem;">Выберите цветы</div>
+                            <div id="constructorFlowers" role="radiogroup" aria-label="Выбор цветов"></div>
+                        </div>
+                        <div class="gift-picker">
+                            <div style="font-weight:600; margin-bottom:0.8rem;">Добавьте подарок</div>
+                            <div id="constructorGifts" role="radiogroup" aria-label="Выбор подарка"></div>
+                        </div>
+                        <div class="flower-picker">
+                            <div class="constructor-result">
+                                <div id="constructorPreview" style="margin-bottom:0.8rem;" aria-live="polite">—</div>
+                                <div class="total-price" id="constructorTotal">0 ₽</div>
+                                <button class="order-constructor-btn" id="orderConstructorBtn"><i
+                                        class="fas fa-shopping-cart" aria-hidden="true"></i> Заказать сборку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>Создайте уникальную композицию вместе с нами</footer>
+            </div>
+
+            <!-- Страница F.A.Q -->
+            <div id="faqPage" class="page">
+                <div class="page-title">Помощь и контакты</div>
+                <div style="background:white; border-radius:24px; padding:2rem; margin:1rem 0;">
+                    <h3 style="color:#0A3323; margin-bottom:1rem;"><i class="fas fa-leaf" aria-hidden="true"></i> Часто
+                        задаваемые вопросы</h3>
+                    <p><strong>Как заказать букет?</strong> — Просто выберите понравившийся в разделе "Букеты" и нажмите
+                        "В корзину".</p>
+                    <p style="margin-top:1rem;"><strong>Можно ли добавить подарок?</strong> — Да, в разделе "Подарки"
+                        или в "Конструкторе" вы можете собрать свой идеальный набор.</p>
+                    <p style="margin-top:1rem;"><strong>Доставка</strong> — от 1 часа по городу. Бесплатно при заказе от
+                        5000 ₽.</p>
+                    <p style="margin-top:1rem;"><strong>Контакты</strong> — +7 (499) 450-50-45, ежедневно с 9:00 до
+                        21:00.</p>
+                    <p style="margin-top:1rem;"><strong>Оплата</strong> — картой онлайн, наличными курьеру, безналичный
+                        расчёт.</p>
+                </div>
+                <footer>Мы всегда на связи</footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Модальное окно корзины -->
+    <div id="cartModal" class="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2 id="cartTitle"><i class="fas fa-shopping-bag" aria-hidden="true"></i> Моя корзина</h2>
+                <button class="close-cart" onclick="closeCart()" aria-label="Закрыть корзину">&times;</button>
+            </div>
+            <div class="cart-body">
+                <div class="cart-items-wrapper" id="cartItemsWrapper">
+                    <div id="cartBody">
+                        <div class="empty-cart">Корзина пуста</div>
+                    </div>
+                </div>
+                <div class="checkout-section" id="checkoutSection" style="display: none;">
+                    <div class="checkout-form">
+                        <div class="promo-block">
+                            <input type="text" id="promoInput" placeholder="Промокод (WELCOME10, MOON20, FLOWER15)"
+                                aria-label="Введите промокод">
+                            <button class="apply-promo" onclick="applyPromoCode()">Применить</button>
+                        </div>
+                        <div class="form-group">
+                            <label>Способ доставки</label>
+                            <div class="delivery-options">
+                                <label><input type="radio" name="delivery" value="delivery" checked
+                                        onchange="updateDeliveryFields()"> Доставка на дом (+350 ₽)</label>
+                                <label><input type="radio" name="delivery" value="pickup"
+                                        onchange="updateDeliveryFields()"> Самовывоз (бесплатно)</label>
+                            </div>
+                        </div>
+                        <div id="addressGroup" class="form-group">
+                            <label for="addressInput">Адрес доставки</label>
+                            <input type="text" id="addressInput" placeholder="Улица, дом, квартира, подъезд">
+                        </div>
+                        <div class="form-group">
+                            <label>Способ оплаты</label>
+                            <div class="payment-methods">
+                                <label class="payment-method"><input type="radio" name="payment" value="new" checked
+                                        onchange="togglePaymentFields()"> Новая карта</label>
+                                <label class="payment-method"><input type="radio" name="payment" value="saved"
+                                        onchange="togglePaymentFields()"> Сохранённая карта</label>
+                            </div>
+                            <div id="newCardBlock">
+                                <div class="form-row">
+                                    <input type="text" id="cardNumber" placeholder="Номер карты" pattern="[0-9]{16,19}"
+                                        maxlength="19" aria-label="Номер карты">
+                                    <input type="text" id="cardExpiry" placeholder="ММ/ГГ"
+                                        pattern="(0[1-9]|1[0-2])\/[0-9]{2}" maxlength="5" aria-label="Срок действия">
+                                </div>
+                                <input type="text" id="cardCvv" placeholder="CVV" pattern="[0-9]{3,4}" maxlength="4"
+                                    style="width: 100px;" aria-label="Код безопасности">
+                            </div>
+                            <div id="savedCardBlock" style="display: none;">
+                                <div class="saved-cards" role="radiogroup" aria-label="Выберите сохранённую карту">
+                                    <div class="saved-card" role="radio" tabindex="0"
+                                        onclick="selectSavedCard('**** 4242')"
+                                        aria-label="Карта Visa, заканчивающаяся на 4242">**** 4242 (Visa)</div>
+                                    <div class="saved-card" role="radio" tabindex="0"
+                                        onclick="selectSavedCard('**** 5555')"
+                                        aria-label="Карта Mastercard, заканчивающаяся на 5555">**** 5555 (Mastercard)
+                                    </div>
+                                    <div class="saved-card" role="radio" tabindex="0"
+                                        onclick="selectSavedCard('**** 1234')"
+                                        aria-label="Карта Мир, заканчивающаяся на 1234">**** 1234 (Mir)</div>
+                                </div>
+                                <div id="selectedCardInfo"
+                                    style="font-size: 0.7rem; color: #839958; margin-top: 0.5rem;" aria-live="polite">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-footer" id="cartFooter" style="display: none;">
+                <div class="cart-summary-line">
+                    <span>Товары:</span>
+                    <span id="cartSubtotal">0 ₽</span>
+                </div>
+                <div id="discountLine" class="cart-summary-line" style="display: none;">
+                    <span>Скидка:</span>
+                    <span id="discountAmount">-0 ₽</span>
+                </div>
+                <div class="cart-summary-line">
+                    <span>Доставка:</span>
+                    <span id="deliveryCost">350 ₽</span>
+                </div>
+                <div class="cart-summary-line">
+                    <span><strong>Итого:</strong></span>
+                    <span class="total-amount" id="cartTotal">0 ₽</span>
+                </div>
+                <button class="checkout-btn" onclick="processOrder()"><i class="fas fa-credit-card"
+                        aria-hidden="true"></i> Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+>>>>>>> c2444fe07ab61fbef7fd1fd0a309ebebd9869a54
 </html>
